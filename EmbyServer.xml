@@ -2,15 +2,15 @@
 <Container>
   <Beta>False</Beta>
   <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-  <Name>MediaServer</Name>
+  <Name>EmbyServer</Name>
   <Description>
     Emby Server is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono. Bringing together movies, music, television and more in one dazzling interface.[br][br]
     [b][span style='color: #E80000;']Directories:[/span][/b][br]
     [b]/config[/b] : this path is used to store Emby's configuration.[br]
     [b]/mnt[/b] : this path is used to add library locations to Emby.[br]
   </Description>
-  <Registry>https://registry.hub.docker.com/u/xxzj990/emby_crack/</Registry>
-  <Repository>xxzj990/emby_crack:latest</Repository>
+  <Registry>https://registry.hub.docker.com/u/emby/embyserver/</Registry>
+  <Repository>emby/embyserver:latest</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
@@ -31,8 +31,8 @@
     <Mode>host</Mode>
     <Publish>
       <Port>
-        <HostPort>8097</HostPort>
-        <ContainerPort>8097</ContainerPort>
+        <HostPort>8096</HostPort>
+        <ContainerPort>8096</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -49,7 +49,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:8097]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8096]/</WebUI>
   <Banner>https://raw.githubusercontent.com/MediaBrowser/Emby.Resources/master/images/Logos/logo.png</Banner>
   <Icon>https://raw.githubusercontent.com/MediaBrowser/Emby.Resources/master/images/Logos/logoicon.png</Icon>
 </Container>
