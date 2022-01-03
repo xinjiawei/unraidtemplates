@@ -4,7 +4,7 @@
   <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <Name>EmbyServer_Unlock</Name>
   <Description>
-    Emby Server is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono. Bringing together movies, music, television and more in one dazzling interface.[br][br]
+    Emby Server is a home media server built on  top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono. Bringing together movies, music, television and more in one dazzling interface.[br][br]
     [b][span style='color: #E80000;']Directories:[/span][/b][br]
     [b]/config[/b] : this path is used to store Emby's configuration.[br]
     [b]/mnt[/b] : this path is used to add library locations to Emby.[br]
