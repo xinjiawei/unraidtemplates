@@ -10,7 +10,7 @@
     [b]/mnt[/b] : this path is used to add library locations to Emby.[br]
   </Description>
   <Registry>https://registry.hub.docker.com/u/xinjiawei1/emby_unlockd/</Registry>
-  <Repository>xinjiawei1/emby_unlockd:4.6.7</Repository>
+  <Repository>xinjiawei1/emby_unlockd:latest</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
