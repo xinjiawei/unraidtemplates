@@ -9,8 +9,8 @@
     [b]/config[/b] : this path is used to store Emby's configuration.[br]
     [b]/mnt[/b] : this path is used to add library locations to Emby.[br]
   </Description>
-  <Registry>https://registry.hub.docker.com/u/xxzj990/emby_crack/</Registry>
-  <Repository>xxzj990/emby_crack:latest</Repository>
+  <Registry>https://registry.hub.docker.com/u/xinjiawei1/emby_unlockd/</Registry>
+  <Repository>xinjiawei1/emby_unlockd:4.6.7</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
