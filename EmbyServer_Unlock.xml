@@ -27,6 +27,7 @@
       <Value>2</Value>
     </Variable>
   </Environment>
+  <Config Name="uhd630" Target="" Default="" Mode="" Description="&#x5BB9;&#x5668; Device: " Type="Device" Display="always" Required="false" Mask="false">/dev/dri/renderD128</Config>
   <Networking>
     <Mode>host</Mode>
     <Publish>
