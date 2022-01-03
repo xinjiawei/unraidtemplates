@@ -37,8 +37,8 @@
         <Protocol>tcp</Protocol>
       </Port>
        <Port>
-        <HostPort>8097</HostPort>
-        <ContainerPort>8097</ContainerPort>
+        <HostPort>8920</HostPort>
+        <ContainerPort>8920</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
