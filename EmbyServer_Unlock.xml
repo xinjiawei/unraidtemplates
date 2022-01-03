@@ -36,11 +36,6 @@
         <ContainerPort>8096</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-       <Port>
-        <HostPort>8920</HostPort>
-        <ContainerPort>8920</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
     </Publish>
   </Networking>
   <Data>
