@@ -5,7 +5,6 @@
 > modprobe i915
 <br>chown nobody:users /dev/dri
 <br>chmod 0777 /dev/dri/*
-<br>
 ## clouddrive.xml
 # edit: /boot/config/go
 > mount --make-shared /mnt/disk1/
