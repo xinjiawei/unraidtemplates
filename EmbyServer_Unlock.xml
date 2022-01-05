@@ -8,6 +8,11 @@
     [b][span style='color: #E80000;']Directories:[/span][/b][br]
     [b]/config[/b] : this path is used to store Emby's configuration.[br]
     [b]/mnt[/b] : this path is used to add library locations to Emby.[br]
+    [b]Unraid user:[/b]
+    [b]edit: /boot/config/go[/b][br]
+    modprobe i915[br]
+    chown nobody:users /dev/dri[br]
+    chmod 0777 /dev/dri/*[br]
   </Description>
   <Registry>https://registry.hub.docker.com/u/xinjiawei1/emby_unlockd/</Registry>
   <Repository>xinjiawei1/emby_unlockd:latest</Repository>
