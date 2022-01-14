@@ -9,9 +9,16 @@
     [b]/config[/b] : this path is used to store Emby's configuration.[br]
     [b]/mnt[/b] : this path is used to add library locations to Emby.[br]
     [b]Unraid user please edit: /boot/config/go ,add[/b][br]
+    [b]Unraid 使用前请编辑: /boot/config/go ,增加[/b][br]
     [b]modprobe i915[/b][br]
     [b]chown nobody:users /dev/dri[/b][br]
     [b]chmod 0777 /dev/dri/*[/b][br]
+    [b]来挂载显卡[/b][br]
+    [b]除此之外,你还需要根据自己的情况更改[/b][br]
+    [b]UID[/b][br]
+    [b]GID[/b][br]
+    [b]GIDLIST[/b][br]
+    [b]来适配你的系统,获取显卡权限[/b][br]
   </Description>
   <Registry>https://registry.hub.docker.com/u/xinjiawei1/emby_unlockd/</Registry>
   <Repository>xinjiawei1/emby_unlockd:latest</Repository>
@@ -61,5 +68,5 @@
   <WebUI>http://[IP]:[PORT:8096]/</WebUI>
   <Banner>https://raw.githubusercontent.com/MediaBrowser/Emby.Resources/master/images/Logos/logo.png</Banner>
   <Icon>https://raw.githubusercontent.com/MediaBrowser/Emby.Resources/master/images/Logos/logoicon.png</Icon>
-  <Config Name="uhd630" Target="" Default="" Mode="" Description="&#x5BB9;&#x5668; Device: " Type="Device" Display="always" Required="false" Mask="false">/dev/dri/renderD128</Config>
+  <Config Name="graphcard" Target="" Default="" Mode="" Description="&#x5BB9;&#x5668; Device: " Type="Device" Display="always" Required="false" Mask="false">/dev/dri/renderD128</Config>
 </Container>
