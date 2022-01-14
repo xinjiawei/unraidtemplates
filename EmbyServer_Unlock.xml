@@ -13,11 +13,14 @@
     modprobe i915[br]
     chown nobody:users /dev/dri[br]
     chmod 0777 /dev/dri/*[br]
+    [b]To mount the graphics card[/b]
     [b]来挂载显卡[/b][br]
+    [b]in addition, you need to make following changes to suit your env[/b][br]
     [b]除此之外,你还需要根据自己的情况更改[/b][br]
     UID[br]
     GID[br]
     GIDLIST[br]
+    [b]to adapt y system and get graphics card access[/b][br]
     [b]来适配你的系统,获取显卡权限[/b][br]
   </Description>
   <Registry>https://registry.hub.docker.com/u/xinjiawei1/emby_unlockd/</Registry>
