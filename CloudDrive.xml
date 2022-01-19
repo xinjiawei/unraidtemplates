@@ -17,6 +17,7 @@
 	<Privileged>true</Privileged>
 	<Support>https://hub.docker.com/r/cloudnas/clouddrive/</Support>
 	<WebUI>http://[IP]:[PORT:9798]/</WebUI>
+	<Icon>https://raw.githubusercontent.com/xinjiawei/unraidtemplates/master/icon.png</Icon>
 	<TemplateURL/>
 	<ExtraParams>-v /mnt/disk1/aliyundriver:/CloudNAS:shared</ExtraParams>
 	<Networking>
