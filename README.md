@@ -25,3 +25,6 @@ you can get the parameters, using commamd:id 你可以用id命令获取这些参
 ## clouddrive.xml
 ### 编辑: /boot/config/go
 > mount --make-shared /mnt/disk1/
+
+## ossrs.xml
+ossrs需要外挂配置文件,请从ossrs官网下载并挂载
