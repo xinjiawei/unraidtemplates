@@ -1,23 +1,21 @@
-<?xml version="1.0"?>
-<Container version="2">
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
   <Name>srs</Name>
+    <Description>
+      SRS(Simple RTMP Server) 是一款非常优秀的开源流媒体服务器软件，可用于直播/录播/视频客服等多种场景，其定位是运营级的互联网直播.
+  </Description>
   <Repository>ossrs/srs</Repository>
   <Registry>https://hub.docker.com/r/ossrs/srs</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
+  <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project/>
-  <Overview/>
-  <Category/>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
-  <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/xinjiawei/unraidtemplates/master/ossrs.png</Icon>
   <ExtraParams/>
   <PostArgs>./objs/srs -c conf/docker.conf</PostArgs>
-  <CPUset/>
-  <DateInstalled>1645332253</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description/>
