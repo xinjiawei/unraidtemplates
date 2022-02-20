@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>srs</Name>
+  <Repository>ossrs/srs</Repository>
+  <Registry>https://hub.docker.com/r/ossrs/srs</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/xinjiawei/unraidtemplates/master/ossrs.png</Icon>
+  <ExtraParams/>
+  <PostArgs>./objs/srs -c conf/docker.conf</PostArgs>
+  <CPUset/>
+  <DateInstalled>1645332253</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1935</HostPort>
+        <ContainerPort>1935</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>1985</HostPort>
+        <ContainerPort>1985</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ossrs/conf</HostDir>
+      <ContainerDir>/usr/local/srs/conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="1935" Target="1935" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 1935" Type="Port" Display="always" Required="false" Mask="false">1935</Config>
+  <Config Name="1985" Target="1985" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 1985" Type="Port" Display="always" Required="false" Mask="false">1985</Config>
+  <Config Name="8080" Target="8080" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="8000" Target="8000" Default="" Mode="udp" Description="&#x5BB9;&#x5668; Port: 8000" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="conf" Target="/usr/local/srs/conf" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /conf" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ossrs/conf</Config>
+</Container>

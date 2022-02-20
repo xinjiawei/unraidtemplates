@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>iperf3-server</Name>
+  <Repository>networkstatic/iperf3</Repository>
+  <Registry/>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs>-s</PostArgs>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5201</HostPort>
+        <ContainerPort>5201</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5201</HostPort>
+        <ContainerPort>5201</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="ports1" Target="5201" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 5201" Type="Port" Display="always" Required="false" Mask="false">5201</Config>
+  <Config Name="Host Port2" Target="5201" Default="" Mode="udp" Description="&#x5BB9;&#x5668; Port: 5201" Type="Port" Display="always" Required="false" Mask="false">5201</Config>
+</Container>
