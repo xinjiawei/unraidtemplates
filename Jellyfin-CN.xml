@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Jellyfin-CN</Name>
+  <Repository>nyanmisaka/jellyfin:latest</Repository>
+  <Registry>https://hub.docker.com/r/nyanmisaka/jellyfin</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Project>https://jellyfin.org/</Project>
+  <Overview>Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps..&#xD;
+&#xD;
+This version of Jellyfin is optimized for hardware transcoding on AMD Ryzen APU Platforms and also for Nvidia hardware transcoding - Nvidia-Driver Plugin needed (Intel hardware transcoding is only supported up to Coffe Lake 9th gen. for now).&#xD;
+&#xD;
+&#xD;
+AMD Hardware transcoding (Please note that you have to be on Unraid 6.9.0beta35 to enable the moduel for AMD):&#xD;
+- Open up a Terminal from Unraid and type in: 'modprobe amdgpu' (without quotes or you edit your 'go' file to load it on every restart of Unraid - refer to the support thread)&#xD;
+- At 'Device' at the bottom here in the template add '/dev/dri'&#xD;
+- In Jellyfin select the VA-API Transcoder at 'Playback' in the Admin section and enable: 'h264', 'HEVC', 'VC1', 'VP9', 'VP8', at the bottom 'Throttle Transcoding' and click 'Save'.&#xD;
+&#xD;
+Intel Hardware transcoding:&#xD;
+- Download and install the Intel-GPU-TOP Plugin from the CA App&#xD;
+- At 'Device' at the bottom here in the template add '/dev/dri'&#xD;
+- In Jellyfin select the Intel Quick Sync Transcoder at 'Playback' in the Admin section and enable: 'h264', 'MPEG2', 'HEVC', 'VC1', 'VP9', 'VP8', at the bottom 'Throttle Transcoding' and click 'Save'.&#xD;
+&#xD;
+Nvidia Hardware transcoding:&#xD;
+- Download and install the Nvidia-Driver Plugin from the CA App&#xD;
+- Turn on the 'Advanced View' here in the template and at 'Extra Parameters' add: '--runtime=nvidia'.&#xD;
+- At 'Nvidia Visible Devices' at the bottom here in the template add your GPU UUID.&#xD;
+- In Jellyfin select the NVENC Transcoder at 'Playback' in the Admin section and enable: 'h264', 'HEVC', 'VC1', 'VP9', 'VP8' (depending on the capabilities of your card), at the bottom 'Throttle Transcoding' and click 'Save'.</Overview>
+  <Category>MediaApp:Video MediaApp:Music</Category>
+  <WebUI>http://[IP]:[PORT:8096]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/ich777/docker-templates/master/ich777/images/jellyfin.png</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8096</HostPort>
+        <ContainerPort>8096</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8920</HostPort>
+        <ContainerPort>8920</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/Jellyfin-CN</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/others</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/Jellyfin-CN/cache</HostDir>
+      <ContainerDir>/cache</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>NVIDIA_VISIBLE_DEVICES</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>all</Value>
+      <Name>NVIDIA_DRIVER_CAPABILITIES</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Data Path" Target="/config" Default="/mnt/user/appdata/Jellyfin-CN" Mode="rw" Description="Main data path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Jellyfin-CN</Config>
+  <Config Name="path1" Target="/media" Default="" Mode="rw" Description="Path to your  library." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/moivetest</Config>
+  <Config Name="path2" Target="/others" Default="" Mode="rw" Description="Path to your other library." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Cache" Target="/cache" Default="/mnt/user/appdata/Jellyfin-CN/cache" Mode="rw" Description="Cache path (strongly recommended to use)." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/Jellyfin-CN/cache</Config>
+  <Config Name="AMD or Intel Device" Target="" Default="" Mode="" Description="Path to AMD or Intel device - fill in with '/dev/dri' if you want to use AMD or Intel hardware transcoding (ATTENTION: Delete this entire entry with the Remove button if you don't want to use Intel or AMD hardware transcoding otherwise the container won't start)." Type="Device" Display="always" Required="true" Mask="false">/dev/dri</Config>
+  <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Nvidia Visible Devices - enter your GPU UUID here (only required if you plan to use Nvidia hardware transcoding otherwise leave empty, don't forget to add '--runtime=nvidia' to your 'Extra Parameters' in the template)." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="http - WebGUI" Target="8096" Default="" Mode="tcp" Description="WebGUI Port http." Type="Port" Display="always" Required="false" Mask="false">8096</Config>
+  <Config Name="https - WebGUI" Target="8920" Default="" Mode="tcp" Description="WebGUI Port https." Type="Port" Display="always" Required="false" Mask="false">8920</Config>
+  <Config Name="Nvidia Driver Capabilities" Target="NVIDIA_DRIVER_CAPABILITIES" Default="" Mode="" Description="Nvidia Driver Capabilities (This value can be left in the template even if you don't want to use Nvidia hardware transcoding)." Type="Variable" Display="advanced" Required="false" Mask="false">all</Config>
+</Container>
