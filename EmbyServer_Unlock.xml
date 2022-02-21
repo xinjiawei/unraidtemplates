@@ -32,15 +32,15 @@
   <Environment>
     <Variable>
       <Name>UID</Name>
-      <Value>2</Value>
+      <Value>0</Value>
     </Variable>
     <Variable>
       <Name>GID</Name>
-      <Value>2</Value>
+      <Value>0</Value>
     </Variable>
     <Variable>
       <Name>GIDLIST</Name>
-      <Value>2</Value>
+      <Value>0</Value>
     </Variable>
   </Environment>
   <Networking>
