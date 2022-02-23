@@ -23,8 +23,14 @@ you can get the parameters, using commamd:id 你可以用id命令获取这些参
 遇到问题请进群<br>
 
 ## clouddrive.xml
-### 编辑: /boot/config/go
+### 使用前编辑: /boot/config/go
 > mount --make-shared /mnt/disk1/
 
 ## ossrs.xml
 ossrs需要外挂配置文件,请从ossrs官网下载并挂载
+
+## Jellyfin-CN.xml
+大陆特供版
+
+## webdav-apache.xml
+webdav服务器,默认挂载/mnt/user目录
