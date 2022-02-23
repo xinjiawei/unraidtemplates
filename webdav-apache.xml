@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>webdav</Name>
+  <Repository>bytemark/webdav</Repository>
+  <Registry>https://hub.docker.com/r/bytemark/webdav/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/bytemark/webdav/</Support>
+  <Project/>
+  <Overview>Docker image for running an Apache WebDAV server&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/bytemark/webdav/</Overview>
+<WebUI>http://[IP]:[PORT:5006]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/xinjiawei/unraidtemplates/master/webdav-apache.png</Icon>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5006</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/var/lib/dav</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>Digest</Value>
+      <Name>AUTH_TYPE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>webdav01</Value>
+      <Name>USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>12345678</Value>
+      <Name>PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="path1" Target="/var/lib/dav" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /srv/dav" Type="Path" Display="always" Required="false" Mask="false">/mnt/user</Config>
+  <Config Name="AUTH_TYPE" Target="AUTH_TYPE" Default="Digest" Mode="" Description="&#x5BB9;&#x5668; Variable: AUTH_TYPE" Type="Variable" Display="always" Required="false" Mask="false">Digest</Config>
+  <Config Name="USERNAME" Target="USERNAME" Default="webdav01" Mode="" Description="&#x5BB9;&#x5668; Variable: USERNAME" Type="Variable" Display="always" Required="false" Mask="false">webdav01</Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">12345678</Config>
+  <Config Name="ports1" Target="80" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 80" Type="Port" Display="always" Required="false" Mask="false">5006</Config>
+</Container>
