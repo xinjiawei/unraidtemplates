@@ -15,14 +15,14 @@
     chmod 0777 /dev/dri/*[br][br]
     [b]to mount the graphics card[/b]
     [b]来挂载显卡[/b][br]
-    [b]in addition, you need to make following changes to suit your env [/b]
+    [b]in addition, you need to make following changes to suit your env [/b][br]
     [b]除此之外,你还需要根据自己的情况更改[/b][br]
     UID[br]
     GID[br]
     GIDLIST[br]
-    [b]to adapt y system and get graphics card access [/b]
+    [b]to adapt y system and get graphics card access [/b][br]
     [b]来适配你的系统,获取显卡权限[/b][br]
-    [b]you can get the parameters, using commamd:id [/b][b]你可以用id命令获取这些参数[/b][br]
+    [b]you can get the parameters, using commamd:id [/b][br][b]你可以用id命令获取这些参数[/b][br]
     [b]遇到问题请进群[/b][br]
   </Description>
   <Registry>https://registry.hub.docker.com/u/xinjiawei1/emby_unlockd/</Registry>
