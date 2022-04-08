@@ -42,6 +42,14 @@
       <Name>GIDLIST</Name>
       <Value>0</Value>
     </Variable>
+    <Variable>
+      <Value>http://10.168.1.192:10809</Value>
+      <Name>http_proxy</Name>
+    </Variable>
+    <Variable>
+      <Value>http://10.168.1.192:10809</Value>
+      <Name>https_proxy</Name>
+    </Variable>
   </Environment>
   <Networking>
     <Mode>host</Mode>
