@@ -82,4 +82,5 @@
   <WebUI>http://[IP]:[PORT:8096]/</WebUI>
   <Banner>https://raw.githubusercontent.com/MediaBrowser/Emby.Resources/master/images/Logos/logo.png</Banner>
   <Icon>https://raw.githubusercontent.com/MediaBrowser/Emby.Resources/master/images/Logos/logoicon.png</Icon>
+  <Config Name="graphcard" Target="" Default="" Mode="" Description="&#x5BB9;&#x5668; Device: " Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
 </Container>
