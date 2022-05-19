@@ -82,10 +82,4 @@
   <WebUI>http://[IP]:[PORT:8096]/</WebUI>
   <Banner>https://raw.githubusercontent.com/MediaBrowser/Emby.Resources/master/images/Logos/logo.png</Banner>
   <Icon>https://raw.githubusercontent.com/MediaBrowser/Emby.Resources/master/images/Logos/logoicon.png</Icon>
-  <Config Name="graphcard" Target="" Default="" Mode="" Description="&#x5BB9;&#x5668; Device: " Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
-    <Config Name="UID" Target="UID" Default="0" Mode="" Description="Container Variable: UID" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="GID" Target="GID" Default="0" Mode="" Description="Container Variable: GID" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="GIDLIST" Target="GIDLIST" Default="0" Mode="" Description="Container Variable: GIDLIST" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="http_proxy" Target="http_proxy" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: http_proxy" Type="Variable" Display="always" Required="false" Mask="false">http://10.168.1.192:10809</Config>
-  <Config Name="https_proxy" Target="https_proxy" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: https_proxy" Type="Variable" Display="always" Required="false" Mask="false">http://10.168.1.192:10809</Config>
 </Container>
