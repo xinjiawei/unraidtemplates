@@ -27,7 +27,7 @@
     [b]遇到问题请进群[/b][br]
   </Description>
   <Registry>https://registry.hub.docker.com/u/xinjiawei1/emby_unlockd/</Registry>
-  <Repository>xinjiawei1/emby_unlockd:4.7.5.0</Repository>
+  <Repository>xinjiawei1/emby_unlockd:4.7.6.0</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
