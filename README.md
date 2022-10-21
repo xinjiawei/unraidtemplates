@@ -29,11 +29,12 @@ Unraid 6.10 版本开始已经去掉模版仓库功能，详见：[UNRAID OS VER
 1. 将本仓库地址 https://github.com/xinjiawei/unraidtemplates 填入 **Template repositories**
 2. 点击 **SAVE** 保存，unraid 会自动拉取模板库并刷新页面
 
-#### 添加容器
+### 添加容器
 
 在 Unraid 自动刷新页面之后，点击 **ADD CONTAINER** 添加容器, 选中emby即可配置, 以及之后一键更新版本
 
 ## emby_unLockd
+https://github.com/xinjiawei/unraidtemplates/tree/master/info#%E7%94%A8%E6%B3%95
 
 ## ossrs.xml
 ossrs需要外挂配置文件,请从ossrs官网下载并挂载
