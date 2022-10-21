@@ -1,6 +1,6 @@
 # My Unraid Templates
 
-## emby_unLockd 4.6.7
+## emby_unLockd
 ### Unraid 使用前请编辑: /boot/config/go ,增加
 > modprobe i915
 <br>chown nobody:users /dev/dri
@@ -20,17 +20,10 @@ to adapt y system and get graphics card access <br>
 来适配你的系统,获取显卡权限<br>
 <br>
 you can get the parameters, using commamd:id 你可以用id命令获取这些参数<br>
-遇到问题请进群<br>
-
-## clouddrive.xml
-### 使用前编辑: /boot/config/go
-> mount --make-shared /mnt/disk1/
 
 ## ossrs.xml
 ossrs需要外挂配置文件,请从ossrs官网下载并挂载
 
-## Jellyfin-CN.xml
-大陆特供版
 
 ## webdav-apache.xml
 webdav服务器,默认挂载/mnt/user目录
