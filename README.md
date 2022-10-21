@@ -1,7 +1,6 @@
 # My Unraid Templates
 
-## emby_unLockd
-
+## 用法
 ### Unraid 6.10.x 以上版本
 
 Unraid 6.10 版本开始已经去掉模版仓库功能，详见：[UNRAID OS VERSION 6.10.0-RC1 AVAILABLE](https://forums.unraid.net/bug-reports/prereleases/unraid-os-version-6100-rc1-available-r1514/?tab=comments#comment-15110)
@@ -32,6 +31,8 @@ Unraid 6.10 版本开始已经去掉模版仓库功能，详见：[UNRAID OS VER
 #### 添加容器
 
 在 Unraid 自动刷新页面之后，点击 **ADD CONTAINER** 添加容器, 选中emby即可配置, 以及之后一键更新版本
+
+## emby_unLockd
 
 ## ossrs.xml
 ossrs需要外挂配置文件,请从ossrs官网下载并挂载
