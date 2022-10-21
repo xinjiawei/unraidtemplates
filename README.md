@@ -1,5 +1,5 @@
 # My Unraid Templates
-
+> 目前unraid模板有个好处是之后可以一键更新版本.
 ## 用法
 > 6.10.* 以上版本重新开启模板, 方法来源于 https://github.com/shuosiw/unraid
 ### Unraid 6.10.x 以上版本
@@ -31,7 +31,7 @@ Unraid 6.10 版本开始已经去掉模版仓库功能，详见：[UNRAID OS VER
 
 ### 添加容器
 
-在 Unraid 自动刷新页面之后，点击 **ADD CONTAINER** 添加容器, 选中emby即可配置, 以及之后一键更新版本
+在 Unraid 自动刷新页面之后，点击 **ADD CONTAINER** 添加容器
 
 ## emby_unLockd
 https://github.com/xinjiawei/unraidtemplates/tree/master/info#%E7%94%A8%E6%B3%95
