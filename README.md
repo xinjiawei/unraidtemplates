@@ -15,7 +15,8 @@ Unraid 6.10 版本开始已经去掉模版仓库功能，详见：[UNRAID OS VER
     ```
     mkdir -p /config/plugins/dockerMan/templates-user;
     cd /config/plugins/dockerMan/templates-user;
-    wget -qO- https://act.jiawei.xin:10086/tmp/emby/unraid_templetes/EmbyServer_Unlock.xml ;
+    wget -qO- https://github.com/xinjiawei/unraidtemplates/releases/download/1.0.0/unraidtemplates-master.tgz | tar -zxf - ;
+    
     ```
 
 2. 刷新 Unraid 管理后台浏览器页面（比如 Windows 按 F5 刷新）
