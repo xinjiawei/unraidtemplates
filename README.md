@@ -13,8 +13,8 @@ Unraid 6.10 版本开始已经去掉模版仓库功能，详见：[UNRAID OS VER
 1. 打开 Unraid 终端，执行以下命令：
 
     ```
-    mkdir -p /config/plugins/dockerMan/templates-user;
-    cd /config/plugins/dockerMan/templates-user;
+    mkdir -p /boot/config/plugins/dockerMan/templates-user;
+    cd /boot/config/plugins/dockerMan/templates-user;
     wget -qO- https://github.com/xinjiawei/unraidtemplates/releases/download/1.0.0/unraidtemplates-master.tgz | tar -zxf - ;
     
     ```
