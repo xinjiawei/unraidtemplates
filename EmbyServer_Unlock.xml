@@ -69,7 +69,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/emby/</HostDir>
+      <HostDir>/mnt/cache/appdata/EmbyServer_Unlock/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
