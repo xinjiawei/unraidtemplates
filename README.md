@@ -1,7 +1,7 @@
 # My Unraid Templates
 > 目前unraid模板有个好处是之后可以一键更新版本.
 ## 用法
-> 6.10.* 以上版本重新开启模板, 方法来源于 https://github.com/shuosiw/unraid
+> 6.10.* 以上版本重新开启模板, 方法来源于 https://github.com/shuosiw/unraid 改进了一些
 ### Unraid 6.10.x 以上版本
 
 Unraid 6.10 版本开始已经去掉模版仓库功能，详见：[UNRAID OS VERSION 6.10.0-RC1 AVAILABLE](https://forums.unraid.net/bug-reports/prereleases/unraid-os-version-6100-rc1-available-r1514/?tab=comments#comment-15110)
