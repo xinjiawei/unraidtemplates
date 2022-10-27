@@ -56,13 +56,13 @@
     <Mode>host</Mode>
     <Publish>
       <Port>
-        <HostPort>8096</HostPort>
-        <ContainerPort>8096</ContainerPort>
+        <HostPort>52979</HostPort>
+        <ContainerPort>52979</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>8920</HostPort>
-        <ContainerPort>8920</ContainerPort>
+        <HostPort>52980</HostPort>
+        <ContainerPort>52980</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
