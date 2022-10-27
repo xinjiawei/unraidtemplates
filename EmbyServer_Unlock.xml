@@ -79,7 +79,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:8096]/</WebUI>
+  <WebUI>http://[IP]:[PORT:52979]/</WebUI>
   <Banner>https://act.jiawei.xin:10086/tmp/emby/logo.png</Banner>
   <Icon>https://act.jiawei.xin:10086/tmp/emby/logoicon.png</Icon>
   <Config Name="graphcard" Target="" Default="" Mode="" Description="&#x5BB9;&#x5668; Device: " Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
