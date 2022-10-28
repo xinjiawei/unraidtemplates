@@ -26,7 +26,7 @@
     [b]默认添加了http_proxy和https_proxy代理环境变量,请根据自己的情况更改或者删除这两个变量[br]
     [b]遇到问题请进群[/b][br]
   </Description>
-  <Registry>https://registry.hub.docker.com/u/xinjiawei1/emby_unlockd/</Registry>
+  <Registry>https://hub.docker.com/r/xinjiawei1/emby_unlockd</Registry>
   <Repository>xinjiawei1/emby_unlockd</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
