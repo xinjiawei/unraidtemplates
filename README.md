@@ -16,8 +16,6 @@ Unraid 6.10 版本开始已经去掉模版仓库功能，详见：[UNRAID OS VER
     mkdir -p /boot/config/plugins/dockerMan/templates;
     cd /boot/config/plugins/dockerMan/templates;
     wget -qO- https://github.com/xinjiawei/unraidtemplates/releases/download/1.0.0/unraidtemplates-master.tgz | tar -zxf - ;
-    或 wget -qO- https://act.jiawei.xin:10086/tmp//emby/unraid_templetes/unraidtemplates-master.tgz | tar -zxf - ;
-    
     ```
 
 2. 刷新 Unraid 管理后台浏览器页面（比如 Windows 按 F5 刷新）
@@ -37,6 +35,9 @@ Unraid 6.10 版本开始已经去掉模版仓库功能，详见：[UNRAID OS VER
 
 ## emby_unLockd
 详情见博客
+
+## nastool
+请修改为自己的下载器下载目录和仓库目录
 
 ## ossrs.xml
 ossrs需要外挂配置文件,请从ossrs官网下载并挂载
