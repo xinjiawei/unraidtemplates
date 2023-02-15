@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>nastool</Name>
+  <Repository>jxxghp/nas-tools</Repository>
+  <Registry>https://hub.docker.com/r/jxxghp/nas-tools</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://hub.docker.com/r/wzcqeasd/nastool/</Support>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://act.jiawei.xin:10086/lib/images/nastool.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1676433323</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nastool</Config>
+  <Config Name="download" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/tr/</Config>
+  <Config Name="warehouse" Target="/warehouse" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/moivetest/</Config>
+  <Config Name="pid" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="uid" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="update" Target="NASTOOL_AUTO_UPDATE" Default="" Mode="" Description="&#x91CD;&#x542F;&#x81EA;&#x52A8;&#x5C1D;&#x8BD5;&#x66F4;&#x65B0;" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>
