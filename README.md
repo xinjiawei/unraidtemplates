@@ -19,7 +19,7 @@ Unraid 6.10 版本开始已经去掉模版仓库功能，详见：[UNRAID OS VER
     ```
 
 2. 刷新 Unraid 管理后台浏览器页面（比如 Windows 按 F5 刷新）
-3. 参考下方**添加容器**来使用，导入的模版会存在于 `User templates` 分类中
+3. 参考下方**添加容器**来使用，导入的模版会存在于 `Default templates` 分类中
 
 
 ### unraid 6.9.x 及以下版本添加模板库
