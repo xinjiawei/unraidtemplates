@@ -38,7 +38,6 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="graphcard" Target="" Default="" Mode="" Description="&#x5BB9;&#x5668; Device: " Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
   <Config Name="Host Port 1" Target="8096" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8096</Config>
   <Config Name="Host Port 2" Target="8920" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8920</Config>
   <Config Name="dlna1" Target="7359" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">7359</Config>
@@ -49,6 +48,7 @@
   <Config Name="GIDLIST" Target="GIDLIST" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
   <Config Name="http_proxy" Target="http_proxy" Default="http://10.168.1.192:10809" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://10.168.1.192:10809</Config>
   <Config Name="https_proxy" Target="https_proxy" Default="http://10.168.1.192:10809" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://10.168.1.192:10809</Config>
+  <Config Name="intel_graphcard" Target="" Default="" Mode="" Description="&#x5BB9;&#x5668; Device: " Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
   <Config Name="NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="GPU-10dae734-695e-49db-e322-d3d3d5e2abe9" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">GPU-10dae734-695e-49db-e322-d3d3d5e2abe9</Config>
   <Config Name="NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/EmbyServer_Unlock" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/EmbyServer_Unlock</Config>
