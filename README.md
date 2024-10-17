@@ -35,15 +35,5 @@ Unraid 6.10 版本开始已经去掉模版仓库功能，详见：[UNRAID OS VER
 ### emby_unLockd
 详情见博客
 
-### nastool
-请修改为自己的下载器下载目录和仓库目录
-
-### ossrs.xml
-ossrs需要外挂配置文件,请从ossrs官网下载并挂载
-
-
-### webdav-apache.xml
-webdav服务器,默认挂载/mnt/user目录
-
 ### iperf3-server
 区域网测速服务器. 详情客户端配置请百度, 安卓可以使用TPLINK旗下的网络百宝箱.
