@@ -1,40 +1,23 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>EmbyServer_Unlock</Name>
-  <Repository>xinjiawei1/emby_unlockd</Repository>
+  <Repository>xinjiawei1/emby_unlockd:beta</Repository>
   <Registry>https://hub.docker.com/r/xinjiawei1/emby_unlockd</Registry>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
   <Project/>
-  <Overview>&#x9ED8;&#x8BA4;&#x6DFB;&#x52A0;&#x4E86;http_proxy&#x548C;https_proxy&#x4EE3;&#x7406;&#x73AF;&#x5883;&#x53D8;&#x91CF;,&#x8BF7;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x60C5;&#x51B5;&#x66F4;&#x6539;&#x6216;&#x8005;&#x5220;&#x9664;&#x8FD9;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x3002;&#xD;
-&#x9ED8;&#x8BA4;&#x6DFB;&#x52A0;&#x4E86;--runtime=nvidia&#xFF0C;NVIDIA_VISIBLE_DEVICES&#xFF0C;NVIDIA_DRIVER_CAPABILITIES&#x53C2;&#x6570;&#x6765;&#x4F7F;&#x7528;nvida &#x663E;&#x5361;&#xFF0C;&#x8BF7;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x60C5;&#x51B5;&#x66F4;&#x6539;&#x6216;&#x8005;&#x5220;&#x9664;&#x8FD9;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x3002;&#xD;
-/config : this path is used to store Emby's configuration.&#xD;
-/mnt : this path is used to add library locations to Emby.&#xD;
-&#xD;
-    Unraid &#x4F7F;&#x7528;&#x524D;&#x8BF7;&#x7F16;&#x8F91;: /boot/config/go ,&#x589E;&#x52A0;&#xD;
-    modprobe i915&#xD;
-    chown nobody:users /dev/dri&#xD;
-    chmod 0777 /dev/dri/*&#xD;
-    &#x6765;&#x6302;&#x8F7D;&#x663E;&#x5361;&#xD;
-    &#x9664;&#x6B64;&#x4E4B;&#x5916;,&#x4F60;&#x8FD8;&#x9700;&#x8981;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x60C5;&#x51B5;&#x66F4;&#x6539;&#xD;
-    UID&#xD;
-    GID&#xD;
-    GIDLIST&#xD;
-    &#x6765;&#x9002;&#x914D;&#x4F60;&#x7684;&#x7CFB;&#x7EDF;,&#x83B7;&#x53D6;&#x663E;&#x5361;&#x6743;&#x9650;&#xD;
-    &#x4F60;&#x53EF;&#x4EE5;&#x7528;id&#x547D;&#x4EE4;&#x83B7;&#x53D6;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#xD;
-&#xD;
-</Overview>
+  <Overview/>
   <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <WebUI>http://[IP]:[PORT:8096]/</WebUI>
   <TemplateURL/>
-  <Icon>https://act.jiawei.xin:10086/tmp/emby/logoicon.png</Icon>
-  <ExtraParams>--runtime=nvidia</ExtraParams>
+  <Icon>https://sf.mb6.top/tmp/emby/logoicon.png</Icon>
+  <ExtraParams>--gpus all</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1676432820</DateInstalled>
+  <DateInstalled>1729175042</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -42,14 +25,14 @@
   <Config Name="Host Port 2" Target="8920" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8920</Config>
   <Config Name="dlna1" Target="7359" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">7359</Config>
   <Config Name="dlna2" Target="1900" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">1900</Config>
-  <Config Name="media path" Target="/mnt" Default="/mnt" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt</Config>
-  <Config Name="UID" Target="UID" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="GID" Target="GID" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="GIDLIST" Target="GIDLIST" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="http_proxy" Target="http_proxy" Default="http://10.168.1.192:10809" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://10.168.1.192:10809</Config>
-  <Config Name="https_proxy" Target="https_proxy" Default="http://10.168.1.192:10809" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://10.168.1.192:10809</Config>
-  <Config Name="intel_graphcard" Target="" Default="" Mode="" Description="&#x5BB9;&#x5668; Device: " Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
-  <Config Name="NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="GPU-10dae734-695e-49db-e322-d3d3d5e2abe9" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">GPU-10dae734-695e-49db-e322-d3d3d5e2abe9</Config>
-  <Config Name="NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="media path" Target="/mnt" Default="/mnt" Mode="rw" Description="&#x6302;&#x8F7D;&#x5A92;&#x4F53;&#x5E93;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="true" Mask="false">/mnt</Config>
+  <Config Name="UID" Target="UID" Default="0" Mode="" Description="&#x4F7F;&#x7528;id&#x547D;&#x4EE4;&#x6839;&#x636E;&#x9700;&#x8981;&#x66F4;&#x6539;" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="GID" Target="GID" Default="0" Mode="" Description="&#x4F7F;&#x7528;id&#x547D;&#x4EE4;&#x6839;&#x636E;&#x9700;&#x8981;&#x66F4;&#x6539;" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="GIDLIST" Target="GIDLIST" Default="0" Mode="" Description="&#x4F7F;&#x7528;id&#x547D;&#x4EE4;&#x6839;&#x636E;&#x9700;&#x8981;&#x66F4;&#x6539;" Type="Variable" Display="always" Required="false" Mask="false">18</Config>
+  <Config Name="http_proxy" Target="http_proxy" Default="http://10.168.1.192:10809" Mode="" Description="&#x7F51;&#x7EDC;&#x4EE3;&#x7406;&#x53C2;&#x6570;, &#x53EF;&#x4EE5;&#x52A0;&#x901F;&#x522E;&#x524A;, &#x4E0D;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x8BF7;&#x5220;&#x9664;" Type="Variable" Display="always" Required="false" Mask="false">http://10.168.1.192:10810</Config>
+  <Config Name="https_proxy" Target="https_proxy" Default="http://10.168.1.192:10809" Mode="" Description="&#x7F51;&#x7EDC;&#x4EE3;&#x7406;&#x53C2;&#x6570;, &#x53EF;&#x4EE5;&#x52A0;&#x901F;&#x522E;&#x524A;, &#x4E0D;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x8BF7;&#x5220;&#x9664;" Type="Variable" Display="always" Required="false" Mask="false">http://10.168.1.192:10810</Config>
+  <Config Name="NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="GPU-10dae734-695e-49db-e322-d3d3d5e2abe9" Mode="" Description="&#x82F1;&#x4F1F;&#x8FBE;&#x663E;&#x5361;&#x76F4;&#x901A;&#x53C2;&#x6570;, &#x9700;&#x8981;&#x914D;&#x5408;unraid&#x82F1;&#x4F1F;&#x8FBE;&#x9A71;&#x52A8;&#x4F7F;&#x7528;. &#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x82F1;&#x4F1F;&#x8FBE;&#x663E;&#x5361;&#x8BF7;&#x5220;&#x9664;.  &#x4E0A;&#x65B9; &#x989D;&#x5916;&#x53C2;&#x6570; &#x4E2D;&#x7684; --gpus all  &#x4E5F;&#x662F;&#x7ED9;&#x82F1;&#x4F1F;&#x8FBE;&#x663E;&#x5361;&#x7528;&#x7684;, &#x9700;&#x8981;&#x4E00;&#x5E76;&#x5220;&#x9664;" Type="Variable" Display="always" Required="false" Mask="false">GPU-10dae734-695e-49db-e322-d3d3d5e2abe9</Config>
+  <Config Name="NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Mode="" Description="&#x82F1;&#x4F1F;&#x8FBE;&#x663E;&#x5361;&#x76F4;&#x901A;&#x53C2;&#x6570;, &#x9700;&#x8981;&#x914D;&#x5408;unraid&#x82F1;&#x4F1F;&#x8FBE;&#x9A71;&#x52A8;&#x4F7F;&#x7528;. &#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x82F1;&#x4F1F;&#x8FBE;&#x663E;&#x5361;&#x8BF7;&#x5220;&#x9664;.  &#x4E0A;&#x65B9; &#x989D;&#x5916;&#x53C2;&#x6570; &#x4E2D;&#x7684; --gpus all  &#x4E5F;&#x662F;&#x7ED9;&#x82F1;&#x4F1F;&#x8FBE;&#x663E;&#x5361;&#x7528;&#x7684;, &#x9700;&#x8981;&#x4E00;&#x5E76;&#x5220;&#x9664;" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="/dev/dri" Target="" Default="" Mode="" Description="intel&#x663E;&#x5361;&#x76F4;&#x901A;&#x53C2;&#x6570;, &#x9700;&#x8981;&#x914D;&#x5408;intel&#x663E;&#x5361;&#x9A71;&#x52A8;&#x4F7F;&#x7528;. &#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;intel&#x663E;&#x5361;&#x8BF7;&#x5220;&#x9664;" Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/EmbyServer_Unlock" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/EmbyServer_Unlock</Config>
 </Container>
